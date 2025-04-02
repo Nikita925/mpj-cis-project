@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Driven Malware Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI-Driven Malware Detection</h1>
+        
+        <!-- Upload Section -->
+        <div class="upload-box" id="upload-box">
+            <p>Drag & Drop or</p>
+            <label for="file-upload" class="browse-btn">Browse</label>
+            <input type="file" id="file-upload" onchange="handleFileUpload()" multiple>
+
+            <div id="drag-area" class="drag-area">
+                <p>Drag files here</p>
+            </div>
+
+            <!-- Scan Button -->
+            <button id="scan-btn" class="btn" style="display: none;" onclick="startScanning()">Scan</button>
+
+            <!-- Scanning Message -->
+            <p id="scanning-msg" class="scanning-msg" style="display: none;">Scanning in Progress...</p>
+
+            <!-- View Results Button -->
+            <button id="view-results-btn" class="btn" style="display: none;" onclick="viewScanResults()">View Scan Results</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
